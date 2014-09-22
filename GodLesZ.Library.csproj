@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22086451-A9A2-414C-8A81-5BE02FC5C8EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GodLesZ.Library</RootNamespace>
+    <AssemblyName>GodLesZ.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GodLesZ.Library.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GodLesZ.Library.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compression\Adler32.cs" />
+    <Compile Include="CConsole.cs" />
+    <Compile Include="Compression\Deflate.cs" />
+    <Compile Include="Compression\RLE.cs" />
+    <Compile Include="Controls\ColorToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EHoverLabelArrow.cs" />
+    <Compile Include="Controls\EImageComboBoxTextAlign.cs" />
+    <Compile Include="Controls\FastListView\Adornments.cs" />
+    <Compile Include="Controls\FastListView\Attributes.cs" />
+    <Compile Include="Controls\FastListView\CellEditors.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\Comparers.cs" />
+    <Compile Include="Controls\FastListView\DataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\Decorations.cs" />
+    <Compile Include="Controls\FastListView\DragSource.cs" />
+    <Compile Include="Controls\FastListView\DropSink.cs" />
+    <Compile Include="Controls\FastListView\Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\FastObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\Filters.cs" />
+    <Compile Include="Controls\FastListView\Generator.cs" />
+    <Compile Include="Controls\FastListView\GlassPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\Groups.cs" />
+    <Compile Include="Controls\FastListView\HeaderControl.cs" />
+    <Compile Include="Controls\FastListView\Munger.cs" />
+    <Compile Include="Controls\FastListView\NativeMethods.cs" />
+    <Compile Include="Controls\FastListView\ObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\ObjectListView.DesignTime.cs" />
+    <Compile Include="Controls\FastListView\Overlays.cs" />
+    <Compile Include="Controls\FastListView\Renderers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\Styles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\ToolTipControl.cs" />
+    <Compile Include="Controls\FastListView\TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastListView\TypedObjectListView.cs" />
+    <Compile Include="Controls\FastListView\VirtualGroups.cs" />
+    <Compile Include="Controls\FastListView\VirtualListDataSource.cs" />
+    <Compile Include="Controls\FastListView\VirtualObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HoverLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Html\CssAnonymousBlockBox.cs" />
+    <Compile Include="Controls\Html\CssAnonymousBox.cs" />
+    <Compile Include="Controls\Html\CssBlock.cs" />
+    <Compile Include="Controls\Html\CssBox.cs" />
+    <Compile Include="Controls\Html\CssBoxWord.cs" />
+    <Compile Include="Controls\Html\CssBoxWordSplitter.cs" />
+    <Compile Include="Controls\Html\CssConstants.cs" />
+    <Compile Include="Controls\Html\CssDefaults.cs" />
+    <Compile Include="Controls\Html\CssDrawingHelper.cs" />
+    <Compile Include="Controls\Html\CssLayoutEngine.cs" />
+    <Compile Include="Controls\Html\CssLength.cs" />
+    <Compile Include="Controls\Html\CssLineBox.cs" />
+    <Compile Include="Controls\Html\CssPropertyAttribute.cs" />
+    <Compile Include="Controls\Html\CssPropertyInheritedAttribute.cs" />
+    <Compile Include="Controls\Html\CssRectangle.cs" />
+    <Compile Include="Controls\Html\CssTable.cs" />
+    <Compile Include="Controls\Html\CssValue.cs" />
+    <Compile Include="Controls\Html\HtmlConstants.cs" />
+    <Compile Include="Controls\Html\HtmlLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Html\HtmlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Html\HtmlRenderer.cs" />
+    <Compile Include="Controls\Html\HtmlTag.cs" />
+    <Compile Include="Controls\Html\HtmlToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Html\InitialContainer.cs" />
+    <Compile Include="Controls\Html\Parser.cs" />
+    <Compile Include="Controls\ImageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImageComboBoxItem.cs" />
+    <Compile Include="Csv\CsvReader.cs" />
+    <Compile Include="Csv\CsvStream.cs" />
+    <Compile Include="AutoPriorityQueue.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\DynamicModel.cs" />
+    <Compile Include="Data\Extensions.cs" />
+    <Compile Include="Extensions\SocketExtensions.cs" />
+    <Compile Include="Extensions\TextWriterExtensions.cs" />
+    <Compile Include="Json\Bson\BsonBinaryType.cs" />
+    <Compile Include="Json\Bson\BsonBinaryWriter.cs" />
+    <Compile Include="Json\Bson\BsonObjectId.cs" />
+    <Compile Include="Json\Bson\BsonReader.cs" />
+    <Compile Include="Json\Bson\BsonToken.cs" />
+    <Compile Include="Json\Bson\BsonType.cs" />
+    <Compile Include="Json\Bson\BsonWriter.cs" />
+    <Compile Include="Json\ConstructorHandling.cs" />
+    <Compile Include="Json\Converters\BinaryConverter.cs" />
+    <Compile Include="Json\Converters\BsonObjectIdConverter.cs" />
+    <Compile Include="Json\Converters\CustomCreationConverter.cs" />
+    <Compile Include="Json\Converters\DataSetConverter.cs" />
+    <Compile Include="Json\Converters\DataTableConverter.cs" />
+    <Compile Include="Json\Converters\DateTimeConverterBase.cs" />
+    <Compile Include="Json\Converters\EntityKeyMemberConverter.cs" />
+    <Compile Include="Json\Converters\ExpandoObjectConverter.cs" />
+    <Compile Include="Json\Converters\IsoDateTimeConverter.cs" />
+    <Compile Include="Json\Converters\JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Json\Converters\JsonValueConverter.cs" />
+    <Compile Include="Json\Converters\KeyValuePairConverter.cs" />
+    <Compile Include="Json\Converters\RegexConverter.cs" />
+    <Compile Include="Json\Converters\StringEnumConverter.cs" />
+    <Compile Include="Json\Converters\VersionConverter.cs" />
+    <Compile Include="Json\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Json\DateFormatHandling.cs" />
+    <Compile Include="Json\DateParseHandling.cs" />
+    <Compile Include="Json\DateTimeZoneHandling.cs" />
+    <Compile Include="Json\DefaultValueHandling.cs" />
+    <Compile Include="Json\FloatFormatHandling.cs" />
+    <Compile Include="Json\FloatParseHandling.cs" />
+    <Compile Include="Json\FormatterAssemblyStyle.cs" />
+    <Compile Include="Json\Formatting.cs" />
+    <Compile Include="Json\IJsonLineInfo.cs" />
+    <Compile Include="Json\JsonArrayAttribute.cs" />
+    <Compile Include="Json\JsonConstructorAttribute.cs" />
+    <Compile Include="Json\JsonContainerAttribute.cs" />
+    <Compile Include="Json\JsonConvert.cs" />
+    <Compile Include="Json\JsonConverter.cs" />
+    <Compile Include="Json\JsonConverterAttribute.cs" />
+    <Compile Include="Json\JsonConverterCollection.cs" />
+    <Compile Include="Json\JsonDictionaryAttribute.cs" />
+    <Compile Include="Json\JsonException.cs" />
+    <Compile Include="Json\JsonExtensionDataAttribute.cs" />
+    <Compile Include="Json\JsonIgnoreAttribute.cs" />
+    <Compile Include="Json\JsonObjectAttribute.cs" />
+    <Compile Include="Json\JsonPosition.cs" />
+    <Compile Include="Json\JsonPropertyAttribute.cs" />
+    <Compile Include="Json\JsonReader.cs" />
+    <Compile Include="Json\JsonReaderException.cs" />
+    <Compile Include="Json\JsonSerializationException.cs" />
+    <Compile Include="Json\JsonSerializer.cs" />
+    <Compile Include="Json\JsonSerializerSettings.cs" />
+    <Compile Include="Json\JsonTextReader.cs" />
+    <Compile Include="Json\JsonTextWriter.cs" />
+    <Compile Include="Json\JsonToken.cs" />
+    <Compile Include="Json\JsonValidatingReader.cs" />
+    <Compile Include="Json\JsonWriter.cs" />
+    <Compile Include="Json\JsonWriterException.cs" />
+    <Compile Include="Json\Linq\Extensions.cs" />
+    <Compile Include="Json\Linq\IJEnumerable.cs" />
+    <Compile Include="Json\Linq\JArray.cs" />
+    <Compile Include="Json\Linq\JConstructor.cs" />
+    <Compile Include="Json\Linq\JContainer.cs" />
+    <Compile Include="Json\Linq\JEnumerable.cs" />
+    <Compile Include="Json\Linq\JObject.cs" />
+    <Compile Include="Json\Linq\JPath.cs" />
+    <Compile Include="Json\Linq\JProperty.cs" />
+    <Compile Include="Json\Linq\JPropertyDescriptor.cs" />
+    <Compile Include="Json\Linq\JPropertyKeyedCollection.cs" />
+    <Compile Include="Json\Linq\JRaw.cs" />
+    <Compile Include="Json\Linq\JToken.cs" />
+    <Compile Include="Json\Linq\JTokenEqualityComparer.cs" />
+    <Compile Include="Json\Linq\JTokenReader.cs" />
+    <Compile Include="Json\Linq\JTokenType.cs" />
+    <Compile Include="Json\Linq\JTokenWriter.cs" />
+    <Compile Include="Json\Linq\JValue.cs" />
+    <Compile Include="Json\MemberSerialization.cs" />
+    <Compile Include="Json\MissingMemberHandling.cs" />
+    <Compile Include="Json\NullValueHandling.cs" />
+    <Compile Include="Json\ObjectCreationHandling.cs" />
+    <Compile Include="Json\PreserveReferencesHandling.cs" />
+    <Compile Include="Json\ReferenceLoopHandling.cs" />
+    <Compile Include="Json\Required.cs" />
+    <Compile Include="Json\Schema\Extensions.cs" />
+    <Compile Include="Json\Schema\JsonSchema.cs" />
+    <Compile Include="Json\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="Json\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="Json\Schema\JsonSchemaException.cs" />
+    <Compile Include="Json\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="Json\Schema\JsonSchemaModel.cs" />
+    <Compile Include="Json\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="Json\Schema\JsonSchemaNode.cs" />
+    <Compile Include="Json\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="Json\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="Json\Schema\JsonSchemaType.cs" />
+    <Compile Include="Json\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="Json\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Json\Schema\ValidationEventArgs.cs" />
+    <Compile Include="Json\Schema\ValidationEventHandler.cs" />
+    <Compile Include="Json\SerializationBinder.cs" />
+    <Compile Include="Json\Serialization\CachedAttributeGetter.cs" />
+    <Compile Include="Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Json\Serialization\DefaultContractResolver.cs" />
+    <Compile Include="Json\Serialization\DefaultReferenceResolver.cs" />
+    <Compile Include="Json\Serialization\DefaultSerializationBinder.cs" />
+    <Compile Include="Json\Serialization\DiagnosticsTraceWriter.cs" />
+    <Compile Include="Json\Serialization\DynamicValueProvider.cs" />
+    <Compile Include="Json\Serialization\ErrorContext.cs" />
+    <Compile Include="Json\Serialization\ErrorEventArgs.cs" />
+    <Compile Include="Json\Serialization\ExpressionValueProvider.cs" />
+    <Compile Include="Json\Serialization\IContractResolver.cs" />
+    <Compile Include="Json\Serialization\IReferenceResolver.cs" />
+    <Compile Include="Json\Serialization\ITraceWriter.cs" />
+    <Compile Include="Json\Serialization\IValueProvider.cs" />
+    <Compile Include="Json\Serialization\JsonArrayContract.cs" />
+    <Compile Include="Json\Serialization\JsonContainerContract.cs" />
+    <Compile Include="Json\Serialization\JsonContract.cs" />
+    <Compile Include="Json\Serialization\JsonDictionaryContract.cs" />
+    <Compile Include="Json\Serialization\JsonDynamicContract.cs" />
+    <Compile Include="Json\Serialization\JsonFormatterConverter.cs" />
+    <Compile Include="Json\Serialization\JsonISerializableContract.cs" />
+    <Compile Include="Json\Serialization\JsonLinqContract.cs" />
+    <Compile Include="Json\Serialization\JsonObjectContract.cs" />
+    <Compile Include="Json\Serialization\JsonPrimitiveContract.cs" />
+    <Compile Include="Json\Serialization\JsonProperty.cs" />
+    <Compile Include="Json\Serialization\JsonPropertyCollection.cs" />
+    <Compile Include="Json\Serialization\JsonSerializerInternalBase.cs" />
+    <Compile Include="Json\Serialization\JsonSerializerInternalReader.cs" />
+    <Compile Include="Json\Serialization\JsonSerializerInternalWriter.cs" />
+    <Compile Include="Json\Serialization\JsonSerializerProxy.cs" />
+    <Compile Include="Json\Serialization\JsonStringContract.cs" />
+    <Compile Include="Json\Serialization\JsonTypeReflector.cs" />
+    <Compile Include="Json\Serialization\LateBoundMetadataTypeAttribute.cs" />
+    <Compile Include="Json\Serialization\MemoryTraceWriter.cs" />
+    <Compile Include="Json\Serialization\ObjectConstructor.cs" />
+    <Compile Include="Json\Serialization\OnErrorAttribute.cs" />
+    <Compile Include="Json\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="Json\Serialization\TraceJsonReader.cs" />
+    <Compile Include="Json\Serialization\TraceJsonWriter.cs" />
+    <Compile Include="Json\StreamingContext.cs" />
+    <Compile Include="Json\StringEscapeHandling.cs" />
+    <Compile Include="Json\TraceLevel.cs" />
+    <Compile Include="Json\TypeNameHandling.cs" />
+    <Compile Include="Json\Utilities\Base64Encoder.cs" />
+    <Compile Include="Json\Utilities\BidirectionalDictionary.cs" />
+    <Compile Include="Json\Utilities\CollectionUtils.cs" />
+    <Compile Include="Json\Utilities\CollectionWrapper.cs" />
+    <Compile Include="Json\Utilities\ConvertUtils.cs" />
+    <Compile Include="Json\Utilities\DateTimeParser.cs" />
+    <Compile Include="Json\Utilities\DateTimeUtils.cs" />
+    <Compile Include="Json\Utilities\DictionaryWrapper.cs" />
+    <Compile Include="Json\Utilities\DynamicProxy.cs" />
+    <Compile Include="Json\Utilities\DynamicProxyMetaObject.cs" />
+    <Compile Include="Json\Utilities\DynamicReflectionDelegateFactory.cs" />
+    <Compile Include="Json\Utilities\DynamicUtils.cs" />
+    <Compile Include="Json\Utilities\DynamicWrapper.cs" />
+    <Compile Include="Json\Utilities\EnumUtils.cs" />
+    <Compile Include="Json\Utilities\EnumValue.cs" />
+    <Compile Include="Json\Utilities\EnumValues.cs" />
+    <Compile Include="Json\Utilities\ExpressionReflectionDelegateFactory.cs" />
+    <Compile Include="Json\Utilities\ILGeneratorExtensions.cs" />
+    <Compile Include="Json\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Json\Utilities\LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Json\Utilities\LinqBridge.cs" />
+    <Compile Include="Json\Utilities\MathUtils.cs" />
+    <Compile Include="Json\Utilities\MethodCall.cs" />
+    <Compile Include="Json\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Json\Utilities\ReflectionDelegateFactory.cs" />
+    <Compile Include="Json\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Json\Utilities\StringBuffer.cs" />
+    <Compile Include="Json\Utilities\StringReference.cs" />
+    <Compile Include="Json\Utilities\StringUtils.cs" />
+    <Compile Include="Json\Utilities\ThreadSafeStore.cs" />
+    <Compile Include="Json\Utilities\TypeExtensions.cs" />
+    <Compile Include="Json\Utilities\ValidationUtils.cs" />
+    <Compile Include="Json\WriteState.cs" />
+    <Compile Include="Network\ByteQueue.cs" />
+    <Compile Include="Network\IPAdressExtensions.cs" />
+    <Compile Include="Network\NetState.cs" />
+    <Compile Include="Network\Packets\BasePacketProfile.cs" />
+    <Compile Include="Diagnostics\BaseProfile.cs" />
+    <Compile Include="Network\Packets\PacketHandler.cs" />
+    <Compile Include="Network\Packets\PacketHandlers.cs" />
+    <Compile Include="Network\Packets\PacketLoader.cs" />
+    <Compile Include="Network\Packets\PacketReceiveProfile.cs" />
+    <Compile Include="Network\Packets\PacketSendProfile.cs" />
+    <Compile Include="Network\SendQueue.cs" />
+    <Compile Include="Network\SocketConnector.cs" />
+    <Compile Include="Network\SocketListener.cs" />
+    <Compile Include="Network\SocketPool.cs" />
+    <Compile Include="Network\Tools.cs" />
+    <Compile Include="SafeDictionary.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Timer\TimerProfile.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\GraphicsExtensions.cs" />
+    <Compile Include="Extensions\IntegerExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\VersionExtensions.cs" />
+    <Compile Include="Formats\GenericFileFormat.cs" />
+    <Compile Include="Formats\GenericFileFormatData.cs" />
+    <Compile Include="Formats\GenericFileFormatVersion.cs" />
+    <Compile Include="Formats\IFileFormat.cs" />
+    <Compile Include="Formats\IGenericFileFormatData.cs" />
+    <Compile Include="Network\BufferPool.cs" />
+    <Compile Include="Network\Packets\EPacketState.cs" />
+    <Compile Include="Network\Packets\Packet.cs" />
+    <Compile Include="Network\Packets\PacketDefinition.cs" />
+    <Compile Include="Network\Packets\PacketDefinitionList.cs" />
+    <Compile Include="Network\Packets\PacketList.cs" />
+    <Compile Include="Network\Packets\PacketReader.cs" />
+    <Compile Include="Network\Packets\PacketVersion.cs" />
+    <Compile Include="Network\Packets\PacketWriter.cs" />
+    <Compile Include="PriorityQueueCollection.cs" />
+    <Compile Include="PriorityQueueCollectionItem.cs" />
+    <Compile Include="SerializeDictionary.cs" />
+    <Compile Include="Timer\ETimerPriority.cs" />
+    <Compile Include="Timer\Timer.cs" />
+    <Compile Include="Timer\TimerChangeEntry.cs" />
+    <Compile Include="Timer\TimerDelegates.cs" />
+    <Compile Include="Timer\TimerThread.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\ApplicationRecoveryException.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\ApplicationRestartRecoveryManager.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\RecoveryData.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\RecoverySettings.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\RestartRestrictions.cs" />
+    <Compile Include="Win7\Core\AppRestartRecovery\RestartSettings.cs" />
+    <Compile Include="Win7\Core\Dialogs\Common\DialogControl.cs" />
+    <Compile Include="Win7\Core\Dialogs\Common\DialogControlCollection.cs" />
+    <Compile Include="Win7\Core\Dialogs\Common\DialogsDefaults.cs" />
+    <Compile Include="Win7\Core\Dialogs\Common\IDialogControlHost.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialog.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogBar.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogButton.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogButtonBase.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogClosingEventArgs.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogCommandLink.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogControl.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogDefaults.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogExpandedInfoMode.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogHyperlinkClickedEventArgs.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogProgressBar.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogProgressBarState.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogRadioButton.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogResult.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogStandardButton.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogStandardIcon.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogStartupLocation.cs" />
+    <Compile Include="Win7\Core\Dialogs\TaskDialogs\TaskDialogTickEventArgs.cs" />
+    <Compile Include="Win7\Core\Interop\AppRestartRecovery\AppRestartRecoveryNativeMethods.cs" />
+    <Compile Include="Win7\Core\Interop\CoreErrorHelper.cs" />
+    <Compile Include="Win7\Core\Interop\CoreHelpers.cs" />
+    <Compile Include="Win7\Core\Interop\CoreNativeMethods.cs" />
+    <Compile Include="Win7\Core\Interop\Dialogs\DialogShowState.cs" />
+    <Compile Include="Win7\Core\Interop\NetworkList\INetwork.cs" />
+    <Compile Include="Win7\Core\Interop\NetworkList\INetworkConnection.cs" />
+    <Compile Include="Win7\Core\Interop\NetworkList\INetworkListManager.cs" />
+    <Compile Include="Win7\Core\Interop\NetworkList\NetworkListManagerClass.cs" />
+    <Compile Include="Win7\Core\Interop\PowerManagement\PowerManagementNativeMethods.cs" />
+    <Compile Include="Win7\Core\Interop\TaskDialogs\NativeTaskDialog.cs" />
+    <Compile Include="Win7\Core\Interop\TaskDialogs\NativeTaskDialogSettings.cs" />
+    <Compile Include="Win7\Core\Interop\TaskDialogs\TaskDialogNativeMethods.cs" />
+    <Compile Include="Win7\Core\Interop\WindowMessage.cs" />
+    <Compile Include="Win7\Core\NetworkList\Network.cs" />
+    <Compile Include="Win7\Core\NetworkList\NetworkCollection.cs" />
+    <Compile Include="Win7\Core\NetworkList\NetworkConnection.cs" />
+    <Compile Include="Win7\Core\NetworkList\NetworkConnectionCollection.cs" />
+    <Compile Include="Win7\Core\NetworkList\NetworkListEnums.cs" />
+    <Compile Include="Win7\Core\NetworkList\NetworkListManager.cs" />
+    <Compile Include="Win7\Core\PowerManagement\BatteryState.cs" />
+    <Compile Include="Win7\Core\PowerManagement\EventManager.cs" />
+    <Compile Include="Win7\Core\PowerManagement\ExecutionState.cs" />
+    <Compile Include="Win7\Core\PowerManagement\MessageManager.cs" />
+    <Compile Include="Win7\Core\PowerManagement\PersonalityGuids.cs" />
+    <Compile Include="Win7\Core\PowerManagement\Power.cs" />
+    <Compile Include="Win7\Core\PowerManagement\PowerManager.cs" />
+    <Compile Include="Win7\Core\PowerManagement\PowerManagerException.cs" />
+    <Compile Include="Win7\Core\PowerManagement\PowerPersonality.cs" />
+    <Compile Include="Win7\Core\PowerManagement\PowerSource.cs" />
+    <Compile Include="Win7\Core\PropertySystem\PropertyKey.cs" />
+    <Compile Include="Win7\Core\PropertySystem\PropVariant.cs" />
+    <Compile Include="Win7\Core\PropertySystem\PropVariantNativeMethods.cs" />
+    <Compile Include="Win7\Core\Resources\LocalizedMessages.Designer.cs" />
+    <Compile Include="Win7\Core\SafeHandles\SafeIconHandle.cs" />
+    <Compile Include="Win7\Core\SafeHandles\SafeRegionHandle.cs" />
+    <Compile Include="Win7\Core\SafeHandles\SafeWindowHandle.cs" />
+    <Compile Include="Win7\Core\SafeHandles\ZeroInvalidHandle.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialog.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogButton.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogCheckBox.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogComboBox.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogControl.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogControlCollection.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogFilter.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogFilterCollection.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogFolderChangeEventArgs.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogGroupBox.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogLabel.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogMenu.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogProminentControl.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogRadioButtonList.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogResult.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogSeperator.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogStandardFilters.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonFileDialogTextBox.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonOpenFileDialog.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\CommonSaveFileDialog.cs" />
+    <Compile Include="Win7\Shell\CommonFileDialogs\ICommonFileDialogIndexedControls.cs" />
+    <Compile Include="Win7\Shell\Common\DefaultShellImageSizes.cs" />
+    <Compile Include="Win7\Shell\Common\EnumUnknown.cs" />
+    <Compile Include="Win7\Shell\Common\EventHandlerExtensionMethods.cs" />
+    <Compile Include="Win7\Shell\Common\IconReference.cs" />
+    <Compile Include="Win7\Shell\Common\NativePoint.cs" />
+    <Compile Include="Win7\Shell\Common\NativeRect.cs" />
+    <Compile Include="Win7\Shell\Common\SearchCondition.cs" />
+    <Compile Include="Win7\Shell\Common\SearchConditionFactory.cs" />
+    <Compile Include="Win7\Shell\Common\ShellEnums.cs" />
+    <Compile Include="Win7\Shell\Common\ShellException.cs" />
+    <Compile Include="Win7\Shell\Common\ShellFile.cs" />
+    <Compile Include="Win7\Shell\Common\ShellFileSystemFolder.cs" />
+    <Compile Include="Win7\Shell\Common\ShellFolder.cs" />
+    <Compile Include="Win7\Shell\Common\ShellFolderItems.cs" />
+    <Compile Include="Win7\Shell\Common\ShellHelper.cs" />
+    <Compile Include="Win7\Shell\Common\ShellItemArray.cs" />
+    <Compile Include="Win7\Shell\Common\ShellLibrary.cs" />
+    <Compile Include="Win7\Shell\Common\ShellLink.cs" />
+    <Compile Include="Win7\Shell\Common\ShellNonFileSystemFolder.cs" />
+    <Compile Include="Win7\Shell\Common\ShellNonFileSystemItem.cs" />
+    <Compile Include="Win7\Shell\Common\ShellObject.cs" />
+    <Compile Include="Win7\Shell\Common\ShellObjectCollection.cs" />
+    <Compile Include="Win7\Shell\Common\ShellObjectContainer.cs" />
+    <Compile Include="Win7\Shell\Common\ShellObjectFactory.cs" />
+    <Compile Include="Win7\Shell\Common\ShellSavedSearchCollection.cs" />
+    <Compile Include="Win7\Shell\Common\ShellSearchCollection.cs" />
+    <Compile Include="Win7\Shell\Common\ShellSearchConnector.cs" />
+    <Compile Include="Win7\Shell\Common\ShellSearchFolder.cs" />
+    <Compile Include="Win7\Shell\Common\ShellThumbnail.cs" />
+    <Compile Include="Win7\Shell\Common\ShellThumbnailEnums.cs" />
+    <Compile Include="Win7\Shell\Common\SortColumn.cs" />
+    <Compile Include="Win7\Shell\Controls\CommandLinkWinforms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win7\Shell\DesktopWindowManager\DesktopWindowManagerNativeMethods.cs" />
+    <Compile Include="Win7\Shell\DesktopWindowManager\GlassEvents.cs" />
+    <Compile Include="Win7\Shell\DesktopWindowManager\GlassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7\Shell\DesktopWindowManager\GlassWindow.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\CommonControlException.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserContentOptions.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserEnums.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserEvents.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserPaneVisibility.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserViewEvents.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\NavigationLog.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\NavigationLogEnums.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\NavigationLogEvents.cs" />
+    <Compile Include="Win7\Shell\ExplorerBrowser\NavigationOptions.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\IntPtrExtensions.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\ShellCOMClasses.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\ShellCOMGuids.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\ShellCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\ShellNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\ShellNativeStructs.cs" />
+    <Compile Include="Win7\Shell\Interop\Common\WindowUtilities.cs" />
+    <Compile Include="Win7\Shell\Interop\Dialogs\DialogsCOMClasses.cs" />
+    <Compile Include="Win7\Shell\Interop\Dialogs\DialogsCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\ExplorerBrowser\ExplorerBrowserCOMGuids.cs" />
+    <Compile Include="Win7\Shell\Interop\ExplorerBrowser\ExplorerBrowserCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\ExplorerBrowser\ExplorerBrowserNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\KnownFolders\KnownFoldersCOMGuids.cs" />
+    <Compile Include="Win7\Shell\Interop\KnownFolders\KnownFoldersCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\KnownFolders\KnownFoldersNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\PropertySystem\PropertySystemCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\PropertySystem\PropertySystemNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\ShellExtensions\HandlerNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\ShellObjectWatcher\ShellObjectWatcherNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\StockIcons\StockIconsNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\Taskbar\TabbedThumbnailNativeMethods.cs" />
+    <Compile Include="Win7\Shell\Interop\Taskbar\TaskbarCOMInterfaces.cs" />
+    <Compile Include="Win7\Shell\Interop\Taskbar\TaskbarNativeMethods.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\DefinitionOptions.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\FileSystemKnownFolder.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\FolderCategory.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\FolderProperties.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\FoldersIdentifiers.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\FolderTypes.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\IKnownFolder.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\KnownFolderHelper.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\KnownFolders.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\KnownFolderSettings.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\NonFileSystemKnownFolder.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\RedirectionCapabilities.cs" />
+    <Compile Include="Win7\Shell\KnownFolders\RetrievalOptions.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\IShellProperty.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\PropertySystemException.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellProperties.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellProperty.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyCollection.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyDescription.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyDescriptionsCache.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyEnums.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyEnumType.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyFactory.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\ShellPropertyWriter.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\StronglyTypedProperties.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\SystemProperties.cs" />
+    <Compile Include="Win7\Shell\PropertySystem\WindowProperties.cs" />
+    <Compile Include="Win7\Shell\Resources\LocalizedMessages.Designer.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\ChangeNotifyEventManager.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\ChangeNotifyLock.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\MessageListener.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\MessageListenerFilter.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\ShellObjectNotificationEventArgs.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\ShellObjectWatcher.cs" />
+    <Compile Include="Win7\Shell\ShellObjectWatcher\ShellObjectWatcherEnums.cs" />
+    <Compile Include="Win7\Shell\StockIcons\StockIcon.cs" />
+    <Compile Include="Win7\Shell\StockIcons\StockIconEnums.cs" />
+    <Compile Include="Win7\Shell\StockIcons\StockIcons.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpList.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListCustomCategory.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListCustomCategoryCollection.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListItem.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListItemCollection.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListLink.cs" />
+    <Compile Include="Win7\Shell\Taskbar\JumpListSeparator.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnail.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailBitmapRequestedEventArgs.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailClosedEventArgs.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailEventArgs.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailManager.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailProxyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7\Shell\Taskbar\TabbedThumbnailScreenCapture.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarEnums.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarInterfaces.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarList.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarManager.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarWindow.cs" />
+    <Compile Include="Win7\Shell\Taskbar\TaskbarWindowManager.cs" />
+    <Compile Include="Win7\Shell\Taskbar\ThumbnailButton.cs" />
+    <Compile Include="Win7\Shell\Taskbar\ThumbnailButtonClickedEventArgs.cs" />
+    <Compile Include="Win7\Shell\Taskbar\ThumbnailToolbarManager.cs" />
+    <Compile Include="Win7\Shell\Taskbar\ThumbnailToolbarProxyWindow.cs" />
+    <Compile Include="Win7\Shell\Taskbar\UserRemovedJumpListItemsEventArg.cs" />
+    <Compile Include="DualDictionary.cs" />
+    <Compile Include="ELanguage.cs" />
+    <Compile Include="Extensions\ColorExtensions.cs" />
+    <Compile Include="FastBitmap.cs" />
+    <Compile Include="Hotkey\EModiferKey.cs" />
+    <Compile Include="Hotkey\GlobalHotKey.cs" />
+    <Compile Include="Hotkey\GlobalHotKeyObject.cs" />
+    <Compile Include="InvokeHelper.cs" />
+    <Compile Include="MethodInvokeHelper.cs" />
+    <Compile Include="Native.cs" />
+    <Compile Include="Network\TimeoutWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Network\WebRequest\PostRequest.cs" />
+    <Compile Include="Network\WebRequest\PostResult.cs" />
+    <Compile Include="Network\WebUtil.cs" />
+    <Compile Include="OSInfo.cs" />
+    <Compile Include="PixelSearch\EPixelPosition.cs" />
+    <Compile Include="PixelSearch\Extensions.cs" />
+    <Compile Include="PixelSearch\PixelInfo.cs" />
+    <Compile Include="PixelSearch\PixelSearch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win7\Core\Resources\LocalizedMessages.resx" />
+    <EmbeddedResource Include="Win7\Shell\Resources\LocalizedMessages.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\FastListView\CustomDictionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Amf\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Json\Dynamic.snk" />
+    <None Include="Json\Newtonsoft.Json.ruleset" />
+    <None Include="Win7\Shell\Design\ShellObjects.cd" />
+    <None Include="Win7\Shell\Design\ShellThumbnailClassDiagram.cd" />
+    <None Include="Win7\Shell\ExplorerBrowser\ExplorerBrowserDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
