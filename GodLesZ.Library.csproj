@@ -433,6 +433,7 @@
     <Compile Include="Network\SocketListener.cs" />
     <Compile Include="Network\SocketPool.cs" />
     <Compile Include="Network\Tools.cs" />
+    <Compile Include="Network\WebRequest\ERequestType.cs" />
     <Compile Include="SafeDictionary.cs" />
     <Compile Include="Singleton.cs" />
     <Compile Include="Timer\TimerProfile.cs" />
@@ -708,8 +709,8 @@
     <Compile Include="Network\TimeoutWebClient.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Network\WebRequest\PostRequest.cs" />
-    <Compile Include="Network\WebRequest\PostResult.cs" />
+    <Compile Include="Network\WebRequest\RequestHelper.cs" />
+    <Compile Include="Network\WebRequest\RequestResult.cs" />
     <Compile Include="Network\WebUtil.cs" />
     <Compile Include="OSInfo.cs" />
     <Compile Include="PixelSearch\EPixelPosition.cs" />

@@ -10,21 +10,21 @@ namespace GodLesZ.Library.Network {
 	public class WebUtil {
 		public static CookieCollection Cookies = new CookieCollection();
 
-		public static PostResult GetPage(string Uri, string UriReferer, PostRequest.PostTypeEnum Method, List<string> Params) {
-			PostRequest mClient;
-			mClient = new PostRequest(Uri, UriReferer);
+		public static RequestResult GetPage(string Uri, string UriReferer, ERequestType Method, List<string> Params) {
+			RequestHelper mClient;
+			mClient = new RequestHelper(Uri, UriReferer);
 			mClient.Type = Method;
 			if (Cookies != null) {
-				mClient.Cookies = Cookies;
+				mClient.Cookies.Add(Cookies);
 			}
 			for (int i = 0; i < Params.Count; i += 2) {
-				mClient.PostItems.Add(Params[i], Params[i + 1]);
+				mClient.RequestUrlValues.Add(Params[i], Params[i + 1]);
 			}
 
-			return mClient.Post();
+			return mClient.Request();
 		}
 
-		public static PostResult GetPage(string Uri, string UriReferer, string Params) {
+		public static RequestResult GetPage(string Uri, string UriReferer, string Params) {
 			List<string> newParams = new List<string>();
 			Params = Params.Trim();
 			if (Params.Length > 0) {
@@ -33,10 +33,10 @@ namespace GodLesZ.Library.Network {
 				}
 			}
 
-			return GetPage(Uri, UriReferer, PostRequest.PostTypeEnum.Get, newParams);
+			return GetPage(Uri, UriReferer, ERequestType.Get, newParams);
 		}
 
-		public static PostResult GetPage(string Uri, string UriReferer, PostRequest.PostTypeEnum Method, string Params) {
+		public static RequestResult GetPage(string Uri, string UriReferer, ERequestType Method, string Params) {
 			List<string> newParams = new List<string>();
 			Params = Params.Trim();
 			if (Params.Length > 0) {
